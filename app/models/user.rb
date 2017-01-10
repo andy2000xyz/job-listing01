@@ -8,3 +8,7 @@ class User < ApplicationRecord
            is_admin
          end
 end
+
+class User < ApplicationRecord
+  has_many :resumes
+end

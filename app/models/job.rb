@@ -24,3 +24,7 @@ end
 class Job < ApplicationRecord
   scope :recent, -> { order('created_at DESC') }
 end
+
+class Job < ApplicationRecord
+  has_many :resumes
+end
