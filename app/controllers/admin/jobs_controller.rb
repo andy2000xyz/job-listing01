@@ -57,7 +57,7 @@ class Admin::JobsController < ApplicationController
     redirect_to :back
   end
 
-  def Hide
+  def hide
     @job = Job.find(params[:id])
     @job.hide!
     redirect_to :back
